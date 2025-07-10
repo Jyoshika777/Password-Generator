@@ -27,7 +27,7 @@ def strength(password):
     if re.search(r"[!@#$%^&*()_+\-=\[\]{};':\"\\|,.<>/?]", password):
         score+=1
     return score
-path=r"C:\Users\Aashish\Downloads\jyoshika.txt"
+path=r"D:\passwords.txt"
 password=input("Enter a password to check:").strip()
 common_passwords=load_passwords(path)
 is_common=check_passwords(password,common_passwords)
